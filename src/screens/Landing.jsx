@@ -3,19 +3,19 @@ import React from "react";
 import TopNavbar from "../components/Nav/TopNavbar";
 import Header from "../components/Sections/Header";
 import SobreNosotros from "../components/Sections/SobreNosotros";
-import Projects from "../components/Sections/Projects";
 import Blog from "../components/Sections/Blog";
 import Pricing from "../components/Sections/Pricing";
 import Contact from "../components/Sections/Contact";
-import Footer from "../components/Sections/Footer"
+import Footer from "../components/Sections/Footer";
+import Inmuebles from "../components/Sections/Inmuebles";
 
-export default function Landing() {
+const Landing =() => {
   return (
     <>
       <TopNavbar />
       <Header />
       <SobreNosotros />
-      <Projects />
+      <Inmuebles />
       <Blog />
       <Pricing />
       <Contact />
@@ -24,4 +24,4 @@ export default function Landing() {
   );
 }
 
-
+export default Landing;

@@ -1,14 +1,12 @@
 import React, { useEffect, useState } from "react";
-import styled from "styled-components";
 import { Link } from "react-scroll";
 // Components
-import Sidebar from "../Nav/Sidebar";
-import Backdrop from "../Elements/Backdrop";
-// Assets
-import BurgerIcon from "../../assets/svg/BurgerIcon";
-import logoImage from "../../assets/img/logo.jpg";
 
-export default function TopNavbar() {
+// Assets
+import BurgerIcon from "../assets/icons/burger-icon";
+import styled from "styled-components";
+
+const TopNavBar = () => {
   const [y, setY] = useState(window.scrollY);
   const [sidebarOpen, toggleSidebar] = useState(false);
 
@@ -112,6 +110,9 @@ export default function TopNavbar() {
     </>
   );
 }
+
+export default TopNavBar;
+
 
 const Wrapper = styled.nav`
   width: 100%;

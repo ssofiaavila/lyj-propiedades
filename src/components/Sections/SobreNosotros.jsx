@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import inmuebleImage from "../../assets/img/inmuebles/inmueble-sobre-nosotros.jpg";
 // Components
-import ClientSlider from "../Elements/ClientSlider";
+import ServiciosSlider from "../Elements/ServiciosSlider";
 
 export default function SobreNosotros() {
   return (
@@ -32,9 +32,9 @@ export default function SobreNosotros() {
           </Advertising>
         </div>
       </div>
-      <div className="lightBg" style={{ padding: "50px 0" }}>
+      <div className="lightBg" >
         <div className="container">
-          <ClientSlider />
+          <ServiciosSlider />
         </div>
       </div>
     </Wrapper>
@@ -55,11 +55,6 @@ const Advertising = styled.div`
     flex-direction: column;
     padding: 0 0 30px 0;
     margin: 80px 0 0px 0;
-  }
-`;
-const ButtonsRow = styled.div`
-  @media (max-width: 860px) {
-    justify-content: space-between;
   }
 `;
 const AddLeft = styled.div`
