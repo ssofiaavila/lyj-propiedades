@@ -12,9 +12,8 @@ module.exports = {
     sourceType: "module",
   },
   plugins: ["react"],
-
   rules: {
-    "react/jsx-no-undef": "error",
-    "no-undef": "error",
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off"
   },
 };

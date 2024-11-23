@@ -1,9 +1,9 @@
 import React from "react";
 import styled from "styled-components";
 // Components
-import BlogBox from "../Elements/BlogBox";
-import FullButton from "../Buttons/FullButton";
-import TestimonialSlider from "../Elements/TestimonialSlider";
+import BlogBox from "../elements/BlogBox";
+import FullButton from "../buttons/full-button";
+import TestimonialSlider from "../elements/TestimonialSlider";
 
 export default function Blog() {
   return (

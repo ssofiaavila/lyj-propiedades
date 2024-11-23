@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 // Components
-import FullButton from "../Buttons/FullButton";
+import FullButton from "../buttons/full-button";
+
 // Assets
 
 import AddImage2 from "../../assets/img/add/add2.png";
-import Chip from "@mui/material/Chip";
-import InmueblesDestacadosGrid from "../Elements/inmuebles-destacados-grid";
+import InmueblesDestacadosGrid from "../elements/inmuebles-destacados-grid";
 
 const Inmuebles = () => {
   return (
@@ -16,25 +16,16 @@ const Inmuebles = () => {
           <HeaderInfo>
             <h1 className="font40 extraBold">Inmuebles </h1>
             <p className="font20">
-              Te presentamos algunos de los inmuebles destacados, para ver todos
-              los disponibles
-              <Chip label="ingresá acá" />
+              Te presentamos algunos de los inmuebles destacados.
             </p>
           </HeaderInfo>
           <div className="row textCenter">
             <InmueblesDestacadosGrid />
-            
-            
-            
           </div>
-          <div className="row textCenter">
-            
-            
-            
-          </div>
+          <div className="row textCenter"></div>
           <div className="row flexCenter">
             <div style={{ margin: "50px 0", width: "200px" }}>
-              <FullButton title="Load More" action={() => alert("clicked")} />
+              <FullButton title="Ver más" action={() => alert("clicked")} />
             </div>
           </div>
         </div>

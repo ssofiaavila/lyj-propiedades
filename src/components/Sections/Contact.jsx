@@ -11,7 +11,7 @@ export default function Contact() {
       <div className="lightBg">
         <div className="container">
           <HeaderInfo>
-            <h1 className="font40 extraBold">Let's get in touch</h1>
+            {/* <h1 className="font40 extraBold">Let's get in touch</h1> */}
             <p className="font13">
               Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
               <br />

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 // Components
-import Sidebar from "../Nav/Sidebar";
-import Backdrop from "../Elements/Backdrop";
+import Sidebar from "./side-bar";
+import Backdrop from "../elements/Backdrop";
 // Assets
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 import logoImage from "../../assets/img/logo.jpg";

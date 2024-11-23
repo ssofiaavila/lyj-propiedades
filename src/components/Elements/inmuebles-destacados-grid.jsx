@@ -1,51 +1,33 @@
+import ProjectBox from "./ProjectBox";
+import Inmueble1 from "../../assets/img/inmuebles/inmueble-1.jpg";
+import Inmueble2 from "../../assets/img/inmuebles/inmueble-2.jpg";
+import Inmueble3 from "../../assets/img/inmuebles/inmueble-3.jpg";
+
 const InmueblesDestacadosGrid = () => {
   return (
     <>
       <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <ProjectBox
-          img={ProjectImg1}
-          title="Awesome Project"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+          img={Inmueble1}
+          title="Chalet adosado"
+          text="150.000 USD | 3 ambientes | San Isidro"
           action={() => alert("clicked")}
         />
       </div>
       <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <ProjectBox
-          img={ProjectImg2}
-          title="Awesome Project"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+          img={Inmueble2}
+          title="Moderna"
+          text="240.000 USD | 5 ambientes | La Plata"
           action={() => alert("clicked")}
         />
       </div>
+
       <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
         <ProjectBox
-          img={ProjectImg3}
-          title="Awesome Project"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-          action={() => alert("clicked")}
-        />
-      </div>
-      <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <ProjectBox
-          img={ProjectImg4}
-          title="Awesome Project"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-          action={() => alert("clicked")}
-        />
-      </div>
-      <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <ProjectBox
-          img={ProjectImg5}
-          title="Awesome Project"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
-          action={() => alert("clicked")}
-        />
-      </div>
-      <div className="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-        <ProjectBox
-          img={ProjectImg6}
-          title="Awesome Project"
-          text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor."
+          img={Inmueble3}
+          title="Centro"
+          text="175.000 USD | 3 ambientes | Villa Urquiza"
           action={() => alert("clicked")}
         />
       </div>
