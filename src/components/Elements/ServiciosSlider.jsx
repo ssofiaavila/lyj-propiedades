@@ -56,7 +56,7 @@ export default function ServiciosSlider() {
         </LogoWrapper>
         <LogoWrapper>
           <ThumbUpIcon fontSize="large" />
-          <Text>Asesoramiento en todo momento</Text>
+          <Text>10 años de experiencia</Text>
         </LogoWrapper>
       </Slider>
     </div>
