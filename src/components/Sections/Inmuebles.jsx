@@ -1,13 +1,12 @@
 import React from "react";
 import styled from "styled-components";
-// Components
+import { useNavigate } from "react-router-dom";
 import FullButton from "../buttons/full-button";
-
-// Assets
-
 import InmueblesDestacadosGrid from "../elements/inmuebles-destacados-grid";
 
 const Inmuebles = () => {
+  const navigate = useNavigate();
+
   return (
     <Wrapper id="projects">
       <div className="whiteBg">
@@ -24,7 +23,7 @@ const Inmuebles = () => {
           <div className="row textCenter"></div>
           <div className="row flexCenter">
             <div style={{ margin: "50px 0", width: "200px" }}>
-              <FullButton title="Ver más" action={() => alert("clicked")} />
+              <FullButton title="Todos los inmuebles" action={() => navigate("/inmuebles")} />
             </div>
           </div>
         </div>

@@ -5,7 +5,7 @@ export default function FullButton({ title, action, border }) {
   return (
     <Wrapper
       className="animate pointer radius8"
-      onClick={action ? () => action() : null}
+      onClick={action} 
       border={border}
     >
       {title}
@@ -21,9 +21,9 @@ const Wrapper = styled.button`
   outline: none;
   color: ${(props) => (props.border ? "#707070" : "#fff")};
   :hover {
-    background-color: ${(props) => (props.border ? "transparent" : "#580cd2")};
-    border: 1px solid #7620ff;
-    color: ${(props) => (props.border ? "#7620ff" : "#fff")};
+    background-color: ${(props) => (props.border ? "transparent" : "#475468")};
+    border: 1px solid ##475468;
+    color: ${(props) => (props.border ? "#475468" : "#fff")};
   }
   font-size: 18px;
 `;

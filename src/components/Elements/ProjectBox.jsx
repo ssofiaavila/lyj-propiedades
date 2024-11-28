@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function ProjectBox({ img, title, text, action, buttonAction }) {
+export default function ProjectBox({ img, title, text, action }) {
   return (
     <Wrapper>
       <ImgBtn
         className="animate pointer"
-        onClick={action ? () => action() : null}
+        onClick={action}
       >
         <img className="radius8" src={img} alt="project"></img>
       </ImgBtn>
@@ -14,7 +14,7 @@ export default function ProjectBox({ img, title, text, action, buttonAction }) {
       <p className="font15">{text}</p>
       <DetailButton
         className="font15 pointer"
-        onClick={buttonAction ? () => buttonAction() : null}
+        onClick={() => action() }
       >
         Ver más
       </DetailButton>
@@ -24,14 +24,14 @@ export default function ProjectBox({ img, title, text, action, buttonAction }) {
 
 const Wrapper = styled.div`
   width: 100%;
-  margin-top: 20px; /* Reducido el margen superior */
+  margin-top: 20px; 
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  min-height: 350px; /* Reduje el mínimo de altura */
-  padding: 15px; /* Reducido el padding */
+  min-height: 350px;
+  padding: 15px;
   border-radius: 8px;
 `;
 
@@ -42,13 +42,13 @@ const ImgBtn = styled.button`
   padding: 0px;
   margin: 0px;
   width: 100%;
-  height: 200px; /* Altura fija para todas las imágenes */
+  height: 200px; 
   overflow: hidden;
-  
+
   img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Recorta la imagen para llenar el contenedor */
+    object-fit: cover;
     border-radius: 8px;
   }
 
@@ -58,7 +58,7 @@ const ImgBtn = styled.button`
 `;
 
 const DetailButton = styled.button`
-  margin-top: 10px; /* Un poco de espacio entre el texto y el botón */
+  margin-top: 10px;
   background-color: #012136;
   color: white;
   padding: 10px 20px;
@@ -68,7 +68,6 @@ const DetailButton = styled.button`
   transition: background-color 0.3s;
 
   &:hover {
-    background-color: #013b6c;
+    background-color: #475468;
   }
 `;
-

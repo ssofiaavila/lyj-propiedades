@@ -1,12 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-// Components
 import FullButton from "../buttons/full-button";
-// Assets
 import HeaderImage from "../../assets/img/inmuebles/inmueble-inicio.jpg";
 import Dots from "../../assets/svg/Dots";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
+  const navigate = useNavigate();
+
   return (
     <Wrapper id="home" className="container flexSpaceCenter">
       <LeftSide className="flexCenter">
@@ -14,7 +15,7 @@ export default function Header() {
           <h1 className="extraBold font60" style={{ color: "#012136" }}>
             El hogar que mereces
           </h1>
-          <p className="font20" style={{paddingBottom: '20px'}}>
+          <p className="font20" style={{ paddingBottom: "20px" }}>
             Una empresa dedicada a bienes raíces, donde brindamos variedad de
             servicios como tasaciones, alquileres, compra-venta, inversiones y
             mas.
@@ -22,7 +23,10 @@ export default function Header() {
             el proceso.
           </p>
           <BtnWrapper>
-            <FullButton title="Inmuebles disponibles" />
+            <FullButton
+              title="Inmuebles disponibles"
+              action={() => navigate("/inmuebles")}
+            />
           </BtnWrapper>
         </div>
       </LeftSide>

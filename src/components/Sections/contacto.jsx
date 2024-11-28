@@ -141,8 +141,8 @@ const ButtonInput = styled.input`
   outline: none;
   color: #fff;
   :hover {
-    background-color: #580cd2;
-    border: 1px solid #7620ff;
+    background-color: #475468;
+    border: 1px solid #475468;
     color: #fff;
   }
   @media (max-width: 991px) {

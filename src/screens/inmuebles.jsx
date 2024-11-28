@@ -9,12 +9,10 @@ import Inmueble4 from "../assets/img/inmuebles/inmueble-4.jpg";
 import Inmueble5 from "../assets/img/inmuebles/inmueble-5.jpg";
 import Inmueble6 from "../assets/img/inmuebles/inmueble-6.jpg";
 
-
-import { useNavigate } from 'react-router-dom';
-
+import { useNavigate } from "react-router-dom";
 
 const Inmuebles = () => {
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   return (
     <>
       <TopNavbar />
@@ -30,14 +28,14 @@ const Inmuebles = () => {
             img={Inmueble1}
             title="Chalet adosado"
             text="150.000 USD | 3 ambientes | San Isidro"
-            action={() => console.log("Inmueble 1 seleccionado")}
-          />
+            action={() => navigate("/inmuebles/1")}
+            />
           <ProjectBox
             img={Inmueble2}
             title="Moderna"
             text="240.000 USD | 5 ambientes | La Plata"
-            action={() => console.log("Inmueble 2 seleccionado")}
-          />
+            action={() => navigate("/inmuebles/2")}
+            />
           <ProjectBox
             img={Inmueble3}
             title="Centro"
@@ -72,7 +70,7 @@ const Inmuebles = () => {
 export default Inmuebles;
 
 const Wrapper = styled.section`
-  padding-top: 150px;
+  padding: 150px 0;
   width: 100%;
   min-height: 700px;
   text-align: center;
