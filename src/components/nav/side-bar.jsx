@@ -91,7 +91,7 @@ export default function Sidebar({ sidebarOpen, toggleSidebar }) {
             smooth={true}
             offset={-60}
           >
-            Quienes nos elijen
+            Equipo
           </Link>
         </li>
         <li className="semiBold font15 pointer">

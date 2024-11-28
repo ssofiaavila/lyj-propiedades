@@ -5,7 +5,7 @@ import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
-export default function Contact() {
+export default function Contacto() {
   return (
     <Wrapper id="contact">
       <div className="lightBg">
@@ -79,9 +79,10 @@ export default function Contact() {
                   </div>
                   <div className="contact-row">
                     <InstagramIcon style={{ color: "#E4405F" }} />
-                    <span>LyJ.Propiedades</span>
+                    <span>lyj.Propiedades</span>
                   </div>
                   <p>Lunes a viernes de 8 a 20 horas</p>
+                  <p>Camino General Belgrano 4398, Berazategui, Buenos Aires.</p>
                 </ContactInfo>
 
                 <MapWrapper>

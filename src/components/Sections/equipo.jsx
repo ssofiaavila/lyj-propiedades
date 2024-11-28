@@ -4,7 +4,7 @@ import styled from "styled-components";
 import BlogBox from "../elements/BlogBox";
 // import TestimonialSlider from "../elements/TestimonialSlider";
 
-export default function Blog() {
+export default function Equipo() {
   return (
     <Wrapper id="blog">
       <div className="lightBg">

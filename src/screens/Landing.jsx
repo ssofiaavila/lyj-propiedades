@@ -1,13 +1,13 @@
 import React from "react";
 // Sections
 import TopNavbar from "../components/nav/top-nav-bar";
-import Header from "../components/Sections/Header";
-import SobreNosotros from "../components/Sections/SobreNosotros";
-import Blog from "../components/Sections/Blog";
+import Header from "../components/sections/header";
+import SobreNosotros from "../components/sections/sobre-nosotros";
+import Equipo from "../components/sections/equipo";
+import Contacto from "../components/sections/contacto";
+import Inmuebles from "../components/sections/inmuebles";
+import Footer from "../components/sections/footer";
 // import Pricing from "../components/Sections/Pricing";
-import Contact from "../components/Sections/Contact";
-import Footer from "../components/Sections/Footer";
-import Inmuebles from "../components/Sections/Inmuebles";
 
 const Landing =() => {
   return (
@@ -16,9 +16,9 @@ const Landing =() => {
       <Header />
       <SobreNosotros />
       <Inmuebles />
-      {/* equipo */}
-      <Blog /> 
-      <Contact />
+      <Equipo /> 
+      <Contacto />
+      {/* <Pricing/> */}
       <Footer />
     </>
   );

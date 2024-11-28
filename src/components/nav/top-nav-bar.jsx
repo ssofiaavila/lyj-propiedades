@@ -91,14 +91,14 @@ export default function TopNavbar() {
                 smooth={true}
                 offset={-80}
               >
-                Quienes nos elijen
+                Equipo
               </Link>
             </li>
             <li className="semiBold font15 pointer">
               <Link
                 activeClass="active"
                 style={{ padding: "10px 15px", color: "white" }}
-                to="pricing"
+                to="contact"
                 spy={true}
                 smooth={true}
                 offset={-80}
@@ -119,7 +119,7 @@ const Wrapper = styled.nav`
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: #012136; 
+  background-color: #012136;
 `;
 const NavInner = styled.div`
   position: relative;
@@ -142,4 +142,3 @@ const UlWrapper = styled.ul`
     display: none;
   }
 `;
-

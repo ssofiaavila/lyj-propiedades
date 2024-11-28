@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 
-export default function Contact() {
+export default function Footer() {
   const getCurrentYear = () => {
     return new Date().getFullYear();
   };
@@ -27,15 +27,6 @@ export default function Contact() {
           <StyleP className="whiteColor font13">
             © {getCurrentYear()} | Todos los derechos reservados.
           </StyleP>
-
-          <Link
-            className="whiteColor animate pointer font13"
-            to="home"
-            smooth={true}
-            offset={-80}
-          >
-            Volver arriba
-          </Link>
         </InnerWrapper>
       </div>
     </Wrapper>
