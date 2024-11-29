@@ -4,7 +4,7 @@ import Header from "../components/Sections/Header";
 import SobreNosotros from "../components/Sections/sobre-nosotros";
 import Equipo from "../components/Sections/equipo";
 import Contacto from "../components/Sections/contacto";
-import Inmuebles from "../components/Sections/inmuebles";
+import Inmuebles from "../components/Sections/Inmuebles";
 import Footer from "../components/Sections/footer";
 import { useEffect } from "react";
 
