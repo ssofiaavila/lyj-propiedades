@@ -1,6 +1,6 @@
 import TopNavbar from "../components/nav/top-nav-bar";
 import styled from "styled-components";
-import Footer from "../components/sections/Footer";
+import Footer from "../components/Sections/Footer";
 import ProjectBox from "../components/elements/ProjectBox";
 import Inmueble1 from "../assets/img/inmuebles/inmueble-1.jpg";
 import Inmueble2 from "../assets/img/inmuebles/inmueble-2.jpg";
