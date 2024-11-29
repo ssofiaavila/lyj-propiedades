@@ -5,7 +5,7 @@ import { Link as RouterLink } from "react-router-dom"; // Agregar import de reac
 
 // Components
 import Sidebar from "./side-bar";
-import Backdrop from "../elements/Backdrop";
+import Backdrop from "../Elements/Backdrop";
 // Assets
 import BurgerIcon from "../../assets/svg/BurgerIcon";
 import logoImage from "../../assets/img/logo.jpg";
