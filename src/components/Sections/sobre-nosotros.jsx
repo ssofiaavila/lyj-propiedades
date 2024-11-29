@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import inmuebleImage from "../../assets/img/inmuebles/inmueble-sobre-nosotros.jpg";
 // Components
-import ServiciosSlider from "../elements/ServiciosSlider";
+import ServiciosSlider from "../Elements/ServiciosSlider";
 
 export default function SobreNosotros() {
   return (

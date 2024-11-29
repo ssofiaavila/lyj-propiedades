@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import FullButton from "../buttons/full-button";
-import InmueblesDestacadosGrid from "../elements/inmuebles-destacados-grid";
+import InmueblesDestacadosGrid from "../Elements/inmuebles-destacados-grid";
 
 const Inmuebles = () => {
   const navigate = useNavigate();

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import BlogBox from "../elements/BlogBox";
+import BlogBox from "../Elements/BlogBox";
 
 export default function Equipo() {
   return (
