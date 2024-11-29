@@ -5,7 +5,7 @@ import Inmueble from "../assets/img/inmuebles/inmueble-3.jpg";
 import Foto1 from "../assets/img/inmuebles/inmueble-3/1.jpeg";
 import Foto2 from "../assets/img/inmuebles/inmueble-3/2.jpg";
 import Foto3 from "../assets/img/inmuebles/inmueble-3/3.jpg";
-import InmuebleDetalle from "../components/sections/inmueble-detalle";
+import InmuebleDetalle from "../components/Sections/inmueble-detalle";
 
 const Inmueble3 = () => {
   return (
