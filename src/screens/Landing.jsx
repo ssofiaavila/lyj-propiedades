@@ -1,11 +1,11 @@
 import React from "react";
 import TopNavbar from "../components/nav/top-nav-bar";
 import Header from "../components/Sections/Header";
-import SobreNosotros from "../components/sections/sobre-nosotros";
-import Equipo from "../components/sections/equipo";
-import Contacto from "../components/sections/contacto";
-import Inmuebles from "../components/sections/inmuebles";
-import Footer from "../components/sections/footer";
+import SobreNosotros from "../components/Sections/sobre-nosotros";
+import Equipo from "../components/Sections/equipo";
+import Contacto from "../components/Sections/contacto";
+import Inmuebles from "../components/Sections/inmuebles";
+import Footer from "../components/Sections/footer";
 import { useEffect } from "react";
 
 const Landing = () => {
