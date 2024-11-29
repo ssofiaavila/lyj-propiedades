@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Screens
-import Landing from "./screens/landing.jsx";
+import Landing from "./screens/Landing.jsx";
 import Inmuebles from "./screens/inmuebles.jsx";
 import Inmueble1 from "./screens/inmueble-1.jsx";
 import Inmueble2 from "./screens/inmueble-2.jsx";
@@ -12,10 +12,6 @@ import Inmueble5 from "./screens/inmueble-5.jsx";
 import Inmueble6 from "./screens/inmueble-6.jsx";
 
 
-
-
-// import About from "./screens/about.jsx"; // Nueva pantalla de ejemplo
-// import Properties from "./screens/properties.jsx"; // Otra pantalla de ejemplo
 
 export default function App() {
   return (
