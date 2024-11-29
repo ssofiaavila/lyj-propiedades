@@ -32,7 +32,7 @@ const InmueblesDestacadosGrid = () => {
           img={Inmueble3}
           title="Centro"
           text="175.000 USD | 3 ambientes | Villa Urquiza"
-          action={() => alert("clicked")}
+          action={() => navigate("/inmuebles/3")}
         />
       </div>
     </>

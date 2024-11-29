@@ -4,10 +4,10 @@ import Inmueble from "../assets/img/inmuebles/inmueble-2.jpg";
 
 import Foto1 from "../assets/img/inmuebles/inmueble-2/1.jpg";
 import Foto2 from "../assets/img/inmuebles/inmueble-2/2.jpg";
-import Foto3 from "../assets/img/inmuebles/inmueble-1/3.jpg";
+import Foto3 from "../assets/img/inmuebles/inmueble-2/3.jpg";
 import InmuebleDetalle from "../components/sections/inmueble-detalle";
 
-const Inmueble1 = () => {
+const Inmueble2 = () => {
   return (
     <>
       <TopNavbar />
@@ -31,7 +31,7 @@ El exterior cuenta con un amplio jardín y un espacio para el estacionamiento, m
   );
 };
 
-export default Inmueble1;
+export default Inmueble2;
 
 const Wrapper = styled.section`
   padding: 50px 0;

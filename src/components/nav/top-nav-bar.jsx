@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom"; // Agregar import de react-router-dom
+
 // Components
 import Sidebar from "./side-bar";
 import Backdrop from "../elements/Backdrop";
@@ -47,64 +49,44 @@ export default function TopNavbar() {
           </BurderWrapper>
           <UlWrapper className="flexNullCenter">
             <li className="semiBold font15 pointer">
-              <Link
-                activeClass="active"
+              <RouterLink
+                to="/"
                 style={{ padding: "10px 15px", color: "white" }}
-                to="home"
-                spy={true}
-                smooth={true}
-                offset={-80}
               >
                 Inicio
-              </Link>
+              </RouterLink>
             </li>
             <li className="semiBold font15 pointer">
-              <Link
-                activeClass="active"
+              <RouterLink
+                to="/#sobre-nosotros"
                 style={{ padding: "10px 15px", color: "white" }}
-                to="sobre-nosotros"
-                spy={true}
-                smooth={true}
-                offset={-80}
               >
                 Sobre nosotros
-              </Link>
+              </RouterLink>
             </li>
             <li className="semiBold font15 pointer">
-              <Link
-                activeClass="active"
+              <RouterLink
+                to="/inmuebles"
                 style={{ padding: "10px 15px", color: "white" }}
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={-80}
               >
                 Inmuebles
-              </Link>
+              </RouterLink>
             </li>
             <li className="semiBold font15 pointer">
-              <Link
-                activeClass="active"
+            <RouterLink
+                to="/#equipo"
                 style={{ padding: "10px 15px", color: "white" }}
-                to="blog"
-                spy={true}
-                smooth={true}
-                offset={-80}
               >
                 Equipo
-              </Link>
+              </RouterLink>
             </li>
             <li className="semiBold font15 pointer">
-              <Link
-                activeClass="active"
+            <RouterLink
+                to="/#contact"
                 style={{ padding: "10px 15px", color: "white" }}
-                to="contact"
-                spy={true}
-                smooth={true}
-                offset={-80}
               >
                 Contacto
-              </Link>
+              </RouterLink>
             </li>
           </UlWrapper>
         </NavInner>

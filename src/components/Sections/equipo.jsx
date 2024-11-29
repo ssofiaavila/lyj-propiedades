@@ -1,12 +1,10 @@
 import React from "react";
 import styled from "styled-components";
-// Components
 import BlogBox from "../elements/BlogBox";
-// import TestimonialSlider from "../elements/TestimonialSlider";
 
 export default function Equipo() {
   return (
-    <Wrapper id="blog">
+    <Wrapper id="equipo">
       <div className="lightBg">
         <div className="container">
           <HeaderInfo>

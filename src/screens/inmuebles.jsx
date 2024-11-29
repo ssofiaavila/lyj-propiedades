@@ -40,25 +40,25 @@ const Inmuebles = () => {
             img={Inmueble3}
             title="Centro"
             text="175.000 USD | 3 ambientes | Villa Urquiza"
-            buttonAction={() => navigate("/detalle/centro")}
+            action={() => navigate("/inmuebles/3")}
           />
           <ProjectBox
             img={Inmueble4}
             title="Casa a estrenar"
             text="280.000 USD | 3 ambientes | Mataderos"
-            action={() => console.log("Inmueble 4 seleccionado")}
+            action={() => navigate("/inmuebles/4")}
           />
           <ProjectBox
             img={Inmueble5}
             title="Casa a estrenar"
             text="235.000 USD | 4 ambientes | Hudson"
-            action={() => console.log("Inmueble 5 seleccionado")}
+            action={() => navigate("/inmuebles/5")}
           />
           <ProjectBox
             img={Inmueble6}
             title="Departamento a estrenar"
             text="110.000 USD | 2 ambientes | Belgrano"
-            action={() => console.log("Inmueble 5 seleccionado")}
+            action={() => navigate("/inmuebles/6")}
           />
         </GridContainer>
       </Wrapper>

@@ -1,11 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
-// Assets
 import EmailIcon from "@mui/icons-material/Email";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import InstagramIcon from "@mui/icons-material/Instagram";
 
 export default function Contacto() {
+  const [formData, setFormData] = useState({
+    fname: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  const [messageSent, setMessageSent] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    if (
+      !formData.fname ||
+      !formData.email ||
+      !formData.subject ||
+      !formData.message
+    ) {
+      setErrorMessage("Por favor, complete todos los campos.");
+      return;
+    }else{
+      setErrorMessage('');
+    }
+    e.preventDefault();
+    setFormData({
+      fname: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+
+    setMessageSent(true);
+    setTimeout(() => setMessageSent(false), 5000);
+  };
+
   return (
     <Wrapper id="contact">
       <div className="lightBg">
@@ -13,48 +53,54 @@ export default function Contacto() {
           <HeaderInfo>
             <h1 className="font40 extraBold">Contacto</h1>
             <p className="font20">
-              ¿Tenes preguntas o necesitas informacion detallada de nuestras
-              propiedades? No dudes en contactarte con nosotros.
-              <br></br>
-              Nuestro compromiso es brindarte el mejor asesoramiento para que
-              encuentres el hogar que te mereces. Nuestras vias de contacto son
-              WhatApp, correo electronico, redes sociales o visitarnos en
-              nuestras oficinas.
+              ¿Tenes preguntas o necesitas información detallada de nuestras
+              propiedades? No dudes en contactarnos. Nuestro compromiso es
+              brindarte el mejor asesoramiento para que encuentres el hogar que
+              te mereces.
             </p>
           </HeaderInfo>
           <div className="row" style={{ paddingBottom: "30px" }}>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-              <Form>
+              {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
+
+              <Form onSubmit={handleSubmit}>
                 <label className="font13">Nombre y apellido:</label>
                 <input
                   type="text"
                   id="fname"
                   name="fname"
-                  className="font20 extraBold"
+                  value={formData.fname}
+                  onChange={handleChange}
+                  className="font20 "
                 />
                 <label className="font13">Email:</label>
                 <input
                   type="text"
                   id="email"
                   name="email"
-                  className="font20 extraBold"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="font20 "
                 />
                 <label className="font13">Motivo:</label>
                 <input
                   type="text"
                   id="subject"
                   name="subject"
-                  className="font20 extraBold"
+                  value={formData.subject}
+                  onChange={handleChange}
+                  className="font20 "
                 />
-                <label className="font13">Mensaje</label>
-
+                <label className="font13">Mensaje:</label>
                 <textarea
                   rows="4"
                   cols="50"
                   type="text"
                   id="message"
                   name="message"
-                  className="font20 extraBold"
+                  value={formData.message}
+                  onChange={handleChange}
+                  className="font20 "
                 />
               </Form>
               <SumbitWrapper className="flex">
@@ -63,8 +109,10 @@ export default function Contacto() {
                   value="Enviar mensaje"
                   className="pointer animate radius8"
                   style={{ maxWidth: "220px" }}
+                  onClick={handleSubmit}
                 />
               </SumbitWrapper>
+              {messageSent && <MessageSent>¡Mensaje enviado!</MessageSent>}
             </div>
             <div className="col-xs-12 col-sm-12 col-md-6 col-lg-6 flex">
               <ContactContainer>
@@ -79,10 +127,12 @@ export default function Contacto() {
                   </div>
                   <div className="contact-row">
                     <InstagramIcon style={{ color: "#E4405F" }} />
-                    <span>lyj.Propiedades</span>
+                    <span>lyj.propiedades</span>
                   </div>
                   <p>Lunes a viernes de 8 a 20 horas</p>
-                  <p>Camino General Belgrano 4398, Berazategui, Buenos Aires.</p>
+                  <p>
+                    Camino General Belgrano 4398, Berazategui, Buenos Aires.
+                  </p>
                 </ContactInfo>
 
                 <MapWrapper>
@@ -107,12 +157,14 @@ export default function Contacto() {
 const Wrapper = styled.section`
   width: 100%;
 `;
+
 const HeaderInfo = styled.div`
   padding: 70px 0 30px 0;
   @media (max-width: 860px) {
     text-align: center;
   }
 `;
+
 const Form = styled.form`
   padding: 70px 0 30px 0;
   input,
@@ -133,6 +185,7 @@ const Form = styled.form`
     padding: 30px 0;
   }
 `;
+
 const ButtonInput = styled.input`
   border: 1px solid #012136;
   background-color: #012136;
@@ -157,21 +210,23 @@ const SumbitWrapper = styled.div`
   }
 `;
 
+const MessageSent = styled.p`
+  color: #4caf50;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+`;
+
 const ContactContainer = styled.div`
   display: flex;
-  align-items: flex-start; /* Alineación al inicio (arriba) */
+  align-items: flex-start;
   flex-wrap: wrap;
 `;
 
 const ContactInfo = styled.div`
   flex: 1;
   padding: 20px;
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Fondo blanco semitransparente */
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 8px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 
@@ -192,8 +247,14 @@ const ContactInfo = styled.div`
 const MapWrapper = styled.div`
   flex: 1;
   iframe {
-    width: 800;
-    height: 600;
+    width: 800px;
+    height: 600px;
     border-radius: 8px;
   }
+`;
+const ErrorMessage = styled.p`
+  color: #f44336;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
 `;
