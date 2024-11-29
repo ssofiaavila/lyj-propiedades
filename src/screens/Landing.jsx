@@ -1,6 +1,6 @@
 import React from "react";
 import TopNavbar from "../components/nav/top-nav-bar";
-import Header from "../components/sections/Header";
+import Header from "../components/sections/Header.jsx";
 import SobreNosotros from "../components/sections/sobre-nosotros";
 import Equipo from "../components/sections/equipo";
 import Contacto from "../components/sections/contacto";
